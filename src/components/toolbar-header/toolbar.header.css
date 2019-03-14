@@ -1,0 +1,9 @@
+.mat-toolbar {
+    position: fixed;
+    z-index: 10;
+    background-color: #872286;
+    color: #FFF;
+}
+.mat-toolbar-row {
+    height: 90px;
+}

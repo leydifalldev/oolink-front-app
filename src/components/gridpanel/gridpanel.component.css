@@ -1,0 +1,7 @@
+.raptor-table {
+    width: 100%;
+}
+.raptor-table th, .raptor-table td {
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+}

@@ -1,0 +1,22 @@
+<div>
+    <div class="profile-card">
+        <img class="profile-photo" [src]="user.thumbnail" />
+        <div class="profile-card-content">
+            <div class="profile-card-name">Doudou FALL</div>
+            <span>Ingénieur Etudes et Développement</span>
+        </div>
+    </div>
+    <mat-tab-group>
+        <mat-tab label="Profil"> 
+            <profile-resume-section></profile-resume-section>
+        </mat-tab>
+        <mat-tab label="Compétences">
+            <main-skills-panel></main-skills-panel>
+            <div>
+                <skills-group-panel *ngFor="let group of details.skills.groups" [skillsGroupInput]="group"></skills-group-panel>
+            </div>
+        </mat-tab>
+        <mat-tab label="Parcours">Content 2</mat-tab>
+        <mat-tab label="Tab 2">Content 2</mat-tab>
+    </mat-tab-group>
+</div>

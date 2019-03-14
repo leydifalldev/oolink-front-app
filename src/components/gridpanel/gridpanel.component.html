@@ -1,0 +1,27 @@
+<mat-card>
+        
+<mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Personal data
+          </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+          </mat-panel-description>
+                
+                <mat-paginator [length]="length"
+                [pageSize]="pageSize"
+                [pageSizeOptions]="pageSizeOptions"
+                (page)="pageEvent = $event">
+        </mat-paginator>
+          
+        </mat-expansion-panel-header>
+</mat-expansion-panel>
+
+<mat-grid-list cols="3" rowHeight="14em">
+        <mat-grid-tile *ngFor="let user of data">
+            <ng-raptorio-card [info]="user"></ng-raptorio-card>                  
+        </mat-grid-tile>
+</mat-grid-list>
+</mat-card>
+      

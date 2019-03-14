@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Ovo');
+html, body {
+    font-family: 'Varela', serif;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #F1F1F1;
+    overflow: auto;
+}
+.metal-toolbar {
+    background: #872286;
+    box-shadow: 0 1px 8px rgba(0,0,0,.3);
+}
+.card {
+    margin: 23px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+    background-color: #FFF;
+    padding: 46px;
+    border-radius: 2px;
+    transition: background-color 200ms ease-in;
+}
+.card > .title {
+    margin-bottom: 30px; 
+}
+.primary-color {
+    color: #7F0F7E !important;
+}
+* {
+    font-family: 'Varela', serif;
+}
+.fill-space {
+    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+}
+
+.app-container {
+    height: 100%;
+    display: flex;
+}
+.app-side-menu {
+    width: 10%;
+    min-width: 80px;
+}
+.body-container {
+    width: 90%;
+
+}
+.mat-grid-tile .mat-figure {
+    left: 8px !important;
+    right: 8px !important;
+}
+
+.raptorio-shadow {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.raptorio-gray-3 {
+    background-color: #F5F5F5;
+}
+
+.mat-toolbar-row{
+    height: 80px !important;
+}
+
+.profile-card {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.profile-photo {
+    height: 120px;
+    width: 120px;
+    border-radius: 68px;
+    border: 5px solid #FFF;
+}
+
+.profile-card-content {
+    color: #676A6B;
+    display: block;
+    margin-left: 20px;
+    padding-top: 25px;
+}
+
+.profile-card-name {
+    font-size: 25px;
+}
+
+.baobab-grid > .item {
+    padding: 4px;
+}
+
+.baobab-grid > .item > .card {
+    margin: 0px;
+}

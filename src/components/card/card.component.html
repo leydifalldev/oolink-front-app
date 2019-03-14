@@ -1,0 +1,15 @@
+<div class="raptorio-card">
+    <div class="raptorio-card-section-1">
+        <img *ngIf="info.thumbnail; else defaultAvatar" raptorio-card-img [src]="info.thumbnail" alt="Photo of a Shiba Inu">
+        <ng-template #defaultAvatar>
+            <img raptorio-card-img src="../assets/oolink_logo.png">
+        </ng-template>
+        <div>
+            <span>{{info.firstname}}</span> <span>{{info.lastname}}</span>
+        </div>
+    </div>
+    <div class="raptorio-card-section-2">
+        <p>{{info.profile}}</p>
+        <p class="raptorio-card-resume">{{info.resume}}</p>
+    </div>
+</div>

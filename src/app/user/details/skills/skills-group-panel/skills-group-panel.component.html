@@ -1,0 +1,29 @@
+
+<section class="eval-skills-container card" >
+    <div class="title">Développement web</div>
+    <mat-card-content style="display: flex">
+    <mat-table #table [dataSource]="this">
+        <!-- Name Column -->
+        <ng-container matColumnDef="technologie">
+          <mat-header-cell *matHeaderCellDef> technologie </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.technologie}} </mat-cell>
+        </ng-container>
+    
+        <!-- Weight Column -->
+        <ng-container matColumnDef="personal_eval">
+          <mat-header-cell *matHeaderCellDef> estimation personnelle </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.personal_eval}} </mat-cell>
+        </ng-container>
+    
+        <!-- Color Column -->
+        <ng-container matColumnDef="test_eval">
+          <mat-header-cell *matHeaderCellDef> notes </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.test_eval}} </mat-cell>
+        </ng-container>
+    
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+      </mat-table>
+      <raptor-radar-chart [data]="group.getRadarChart()"></raptor-radar-chart>
+    </mat-card-content>
+  </section>
